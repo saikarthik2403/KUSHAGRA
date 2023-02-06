@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESC Keypress event handling</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Devtown</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eligendi accusantium sequi magni, consectetur earum modi est qui aspernatur doloribus error debitis cum, possimus ullam libero praesentium inventore dolorum, vitae consequuntur et! Quis commodi sed quidem cumque nesciunt eos dolorem veniam nostrum quam ullam molestias, aspernatur rem. Ea obcaecati esse dolores tempora quia ipsum ut repellat cum, est sint nisi cupiditate architecto! Atque alias laborum similique porro natus eaque exercitationem, voluptatum vitae laudantium odit quam expedita, consectetur veniam molestiae nostrum earum dolorum tempora repellat ab architecto est. Vel voluptas dignissimos repudiandae, delectus voluptate cum corporis officia eaque nihil eos quis est facere aspernatur tempore aut fugit magnam inventore excepturi iure sed. Doloribus ut a officiis, deleniti nam reprehenderit cum sequi corporis ex temporibus est id fugit inventore incidunt labore sunt nemo, quisquam, debitis doloremque enim aliquid saepe? Culpa accusantium hic debitis corrupti eius tenetur in nostrum at facilis cupiditate neque id vel repellendus nam, error saepe eveniet magnam vitae earum voluptate. Laboriosam sit officia ad reiciendis exercitationem accusantium voluptas? Dignissimos quae quisquam praesentium adipisci officia quas necessitatibus facere ex, illo, cupiditate similique veniam labore quasi eius molestiae eaque blanditiis asperiores laboriosam non, suscipit ratione. Totam corrupti minima aperiam nobis maiores?</p>
+        
+    </div>
+    <script>
+       document.addEventListener('keydown',function(event){
+        if(event.key==="Escape"){
+            if(document.getElementById('para').style.display !='none')
+            document.getElementById('para').style.display='none';
+            else
+            document.getElementById('para').style.display='block';
+        }
+       })
+    </script>
+</body>
+</html>

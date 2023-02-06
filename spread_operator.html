@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Devtown</h1>
+    </div>
+    <script>
+        // ...name of array
+        // are used to  expand any array or itterables where there are more than one arguments
+        function sum(a,b,c){
+            console.log(a+b+c);
+        }
+
+       // sum(1,2,3)
+ let arr=[1,2,3]
+
+// ES5
+// sum.apply(null,arr);
+
+//ES6
+// sum(...arr)
+
+//concatenate
+
+// let arr1=[1,2,3]
+// let aar2=[4,5,6]
+
+// //  arr1=arr1.concat(aar2)
+
+// arr1=[...arr1,...aar2]
+
+//  console.log(arr1)
+
+
+ //copy and push
+
+ let aar1=[1,2,3]
+// let aar2=aar1
+
+// aar2.push(4,5)
+
+// console.log(aar2)
+// console.log(aar1)
+
+let aar2 =[...aar1,4,5]
+
+console.log(aar2)
+console.log(aar1)
+
+
+    </script>
+</body>
+</html>

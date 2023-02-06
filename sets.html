@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets in JS</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Devtown</h1>
+    </div>
+    <script>
+        //sets 
+        //what is Set?
+        //Set is a collection of "unique" elements
+
+        let mySet= new Set();// how  to intitizlize the set 
+        console.log("This is before adding elemnts",mySet)
+        mySet.add("this")
+        mySet.add('my Name')
+        mySet.add("this")
+        mySet.add(345)
+        mySet.add(true)
+        mySet.add(false)
+        mySet.add(true)
+
+        // console.log("This is after adding elemets in set",mySet)
+
+        // console.log("The size of the set it",mySet.size)
+
+        // console.log("The set has 345",mySet.has(34))
+
+
+        //can we add the elemts in the set at the time of its initialization
+
+        // let mySet2 = new Set(['this',true,'this',false,375,{a:3,b:45}]) // at the initialization using set constructor
+
+        // console.log(mySet2)
+        
+
+        //how to remove any element from the set.
+        console.log("This is before removing elemets in set",mySet)
+
+        mySet.delete('this')
+        console.log("This is after removing elemets in set",mySet)
+
+
+
+
+
+
+    </script>
+</body>
+</html>

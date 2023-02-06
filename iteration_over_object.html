@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteration over object</title>
+</head>
+<body>
+    <h1>Welcome to Devtown</h1>
+    <script>
+        let user={
+            Name:"Pie",
+            Age:30,
+            occuputattion:"Web Devloper",
+            phone_no:"1234566788",
+            password:"vdjvbjbvubvuf"
+        }
+      //objets.keys
+    //   console.log(Object.keys(user))
+    //   for(let key of Object.keys(user)){
+    //     console.log(`${key}=>${user[key]}`)
+    //   }
+      //object.values
+    //   console.log()
+    //   for(let value of Object.values(user) ){
+    //     console.log(value)
+    //   }
+      //object.entries
+    //   console.log(Object.entries(user))
+    for(let [key,value] of Object.entries(user)){
+        console.log(`${key}=>${value}`)
+    }
+    </script>
+</body>
+</html>

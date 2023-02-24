@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce Array Method</title>
+</head>
+<body>
+    <div class="conatiner">
+        <h1>Welcome to Devtown</h1>
+    </div>
+    <script>
+        //Reduce-it will convert you long array into just one value after perfoming the operation that we say.
+       //it take the reduce function and it returns the single value.
+       let arr=[10,20,30,40,50]
+    //    let sum=0;
+    //    for(let value of arr){
+    //     sum=sum+value
+    //    }
+    //    console.log(sum)
+    
+    //Parameters
+    //Accumulater
+    //current value
+    //current index
+    //intial value
+
+    let sum=arr.reduce((Accum,curr_val)=>{
+        return Accum+curr_val
+    },10)
+    console.log(sum)
+
+
+    
+    </script>
+
+</body>
+</html>

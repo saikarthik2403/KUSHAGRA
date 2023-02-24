@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Devtown</h1>
+    </div>
+    <script>
+        //Array-Array is a  collection of items stored at a contigenious memory location
+
+        let num=[1,2,3,4,5,6]
+        //Array methods
+
+        //toString-This method converts an array to a string and it returns a string value.
+
+        let Str_num=num.toString()
+        console.log(Str_num, typeof Str_num)
+
+        //join-Join method joins the array values with any one value that we pass as paramter.
+         //1_2_3_4_5_6
+
+         let join_num=num.join(" // ")
+         console.log(join_num, typeof join_num)
+
+         //pop-It remove the last element from an array. which modifies your orinal array.
+
+        // let pop_value= num.pop() //It returns the poped value.
+        //  console.log(num,pop_value)
+
+
+        //push- Push is a method which add an element in the last of an array.it return the length of the array after pushing the value into an array
+
+        //  let push_value=num.push(34)
+        //  console.log(num,push_value)
+
+         //shift-it removes the element from the start of an array.it returns the value that it has shifted.
+
+        //  let shift_value=num.shift()
+        //  console.log(num,shift_value)
+
+        //unshift-it adds the element from the start of an array.similar to push it also returns the length of an array after adding an element into it.
+
+
+        let unshift_value=num.unshift(346)
+
+        console.log(num,unshift_value)
+
+
+
+
+
+
+    </script>
+</body>
+</html>

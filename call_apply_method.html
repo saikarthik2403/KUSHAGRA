@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call and Apply Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Devtown</h1>
+    </div>
+    <script>
+        //call and Apply methods
+
+        //They both are your predefined methods in JavaScript
+        //They both are used for calling a function of another object that can be used by some other object
+
+        let obj1={
+            name:"Devtown",
+            content:"Programming",
+            fetures:function(rating,support){
+                console.log(`The ${this.name} is my fav youtube Channel.It post conntent on ${this.content}.The rating of my fav channel is ${rating}.Kindly please ${support} to my channel.` )
+            }
+        }
+
+        // obj1.fetures(5,"Subscribe")
+
+        let obj2={
+            name:"Kushagra Tech",
+            content:"Programming & vlog"
+        }
+
+        obj1.fetures.call(obj2,4,"Subscribe")
+
+        //Apply is very much similar to call method
+        //But the only difference is that Apply takes the argument value in Array and your call takes it seperately.
+
+        obj1.fetures.apply(obj2,[4,"Subscribe"])
+
+
+
+        let arrmax=[1,2,3]
+        
+        let max=Math.max.apply(null,arrmax)
+        console.log(max)
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method chaining</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Devtown</h1>
+    </div>
+    <script>
+        //Method Chaining-Calling two or more functions one after another using the dot operator.
+        // function Calculator(){
+        //     let data=0;
+          
+        //     this.add=function(val){
+        //          data=data+val
+        //          console.log(data)
+        //          return this
+        //     }
+        //     this.sub=function(val){
+        //         data=data-val
+        //         console.log(data)
+        //         return this
+        //     }
+        //     this.mul=function(val){
+        //         data=data*val
+        //         console.log(data)
+        //         return this
+        //     }
+
+        // }
+
+        // const cal=new Calculator()
+
+
+        
+        // cal.sub(5).add(10).mul(20)
+        // cal.sub(10)
+
+
+        let arr=[10,20,35,45,50,1,2,3,4]
+
+        let less_ten=arr.filter(val=> val % 2==0).find(val=> val<10)
+        console.log(less_ten)
+
+
+
+
+     
+    </script>
+</body>
+</html>

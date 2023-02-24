@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Parameter</title>
+</head>
+<body>
+    <div class="contaner">
+        <h1>Welcome to Devtown</h1>
+    </div>
+    <script>
+        // function multiply(a,b,c,d,e){
+           
+        //    if(typeof b === "undefined"){
+        //     b=3
+        //    }
+        //     console.log(a)
+        //     console.log(b)
+
+        //     console.log(a*b)
+        // }
+
+        // multiply(4)
+
+        //ES6
+
+        //Default Function parameter allows you to pass the default value to this parameter at a time of declaration.
+        
+        // function multiply(a=2,b=4){
+        //     console.log(a*b)
+        // }
+
+        // multiply(4)
+
+
+        const multiply=(a=2,b=4)=>{
+            console.log(a*b)
+        }
+        multiply(3)
+    </script>
+</body>
+</html>

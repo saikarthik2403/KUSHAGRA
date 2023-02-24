@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass or Call by Reference or Value</title>
+</head>
+<body>
+    <div class="conatiner">
+        <h1>Welcome to Devtown</h1>
+    </div>
+    <script>
+        //Primitve Datatype-Number,String,Boolean,Symbol,null,undefined,bigInt
+        //Non-Primitive Datatype-object,array
+
+        //primitives-call by value
+
+        let a=3;
+
+        let b=a;
+
+        b=a+3
+
+        console.log(a)
+        console.log(b)
+        //non-primitves-call by reference
+
+        // let obj1={
+        //     name:"Kushagra",
+        //     pass:"Kush"
+        // }
+
+        // let obj2=obj1
+        // obj2.pass="cjgwufgewudfgfe"
+        // console.log(obj1)
+        // console.log(obj2)
+
+        let arr1=[1,2,3]
+        let arr2=arr1
+        arr2.push(4)
+        console.log(arr1)
+        console.log(arr2)
+
+
+        //useing function 
+        //call by value
+
+        let myname="Kushagra"
+       function showname(val){
+            val="Kush"
+          return val
+       }
+
+       console.log(showname(myname))
+       console.log(myname)
+
+       //call by refference
+
+       let obj1={
+        name:"Kushagra",
+        pass:"Kush"
+       }
+
+       function showname(val){
+            val.name="Kush"
+          return val
+       }
+
+       console.log(showname(obj1))
+       console.log(obj1)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Devtown</h1>
+    </div>
+    <script>
+        console.log("Dates in JS")
+        //init of date
+       // let dt=new Date()
+        let dt=new Date(0)
+        let dt1=new Date(1000)
+        console.log(dt,dt1)
+
+        let newDate=new Date("2002-04-17")
+        console.log(newDate)
+
+        //format of passing parameter is year,month,date,hours,minutes,seconds,miliseconds
+        //months start from 0 to 11 0-jan 11-dec
+        let newDate2=new Date(2002,12,17,0,0,0,0)
+        console.log(newDate2)
+    </script>
+</body>
+</html>

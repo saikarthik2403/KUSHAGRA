@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Object class</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Devtown</h1>
+    </div>
+    <script>
+      //Printing The Math Object
+      let m = Math;
+      console.log(m);
+
+      // Printing the values of contant in Math Object
+
+      console.log("The value is Math.E", Math.E);
+      console.log("The value is Math.LN2", Math.LN2);
+      console.log("The value is Math.PI", Math.PI);
+      console.log("The value is Math.SQRT2", Math.SQRT2);
+      console.log("The value is Math.LOG10E", Math.LOG10E);
+
+      // Printing the values of Functions in Math Object
+
+      let a = 34.6458;
+      let b = 90;
+      //Round
+      console.log("The value of a and b is", a, b);
+      console.log(
+        "The value of a and b rounded is",
+        Math.round(a),
+        Math.round(b)
+      );
+
+      //Pow
+
+      console.log("The 2 raise to power 3 is",Math.pow(2,3))
+      console.log("The 3 raise to power 12 is",Math.pow(3,12))
+      console.log("The 2 raise to power 0 is",Math.pow(2,0))
+
+
+      //SQRT
+      console.log("Square root of 64 is",Math.sqrt(64))
+      console.log("Square root of 84 is",Math.sqrt(84))
+      console.log("Square root of 50 is",Math.sqrt(50))
+      console.log("Square root of 36 is",Math.sqrt(36))
+
+      //Floor and Ceil
+      //Floor-Floor returns a rounded down value
+      //Ceil-Returns the Rounded Up value
+
+      console.log("Floor value of 3.2 is ",Math.floor(3.2))
+      console.log("Floor value of 3.5 is ",Math.floor(3.5))
+      console.log("Floor value of 3.8 is ",Math.floor(3.8))
+
+      console.log("ceil value of 3.2 is ",Math.ceil(3.2))
+      console.log("ceil value of 3.5 is ",Math.ceil(3.5))
+      console.log("ceil value of 3.8 is ",Math.ceil(3.8))
+
+      //Absolute or abs
+
+      console.log("Absolute value os 5.66 is ",Math.abs(5.66))
+      console.log("Absolute value os -5.66 is ",Math.abs(-5.66))
+
+      //Min and Max
+
+      console.log("Min value between 3,4,6 is ",Math.min(3,4,6))
+      console.log("Max value between 3,4,6 is ",Math.max(3,4,6))
+
+      //random
+      //between 1 to 100
+      //(a,b)=a+(b-a)*Math.random() 
+      //if random number is 0 = 1+(100-1)*0=1
+      //if random number is 1 = 1+(100-1)*1=1+100-1=100
+       //between 1 to 100(Included)
+      // (a,b)=a+Math.floor((b-a)*Math.random())
+      let a1=1
+      let b1=10
+      console.log("Random number is",a1+Math.floor((b1-a1)*Math.random()))
+    </script>
+  </body>
+</html>

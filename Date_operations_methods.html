@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Object Methods and operations</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: blanchedalmond;
+            border: 2px solid grey;
+            margin: 4px;
+            padding: 34px;
+            text-align: center;
+
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+     Current Time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("Date and Time Object Methods")
+
+        let newDate=new Date(2002,3,17,0,0,0,0)
+        console.log(newDate)
+        let yr=newDate.getFullYear()
+        console.log("The yera of newDate is",yr)
+        let month=newDate.getMonth()
+        console.log("The month of newDate is",month)
+        let hour=newDate.getHours()
+        console.log("The month of newDate is",hour)
+
+        //getting ms seconds day min 
+
+        
+        newDate.setFullYear(2003)
+        newDate.setDate(35)
+        newDate.setMinutes(65)
+        console.log(newDate)
+
+        //clock
+
+        setInterval(updateTime,1000)
+
+        function updateTime(){
+time.innerHTML=new Date()
+        }
+
+
+
+    </script>
+  </body>
+</html>
